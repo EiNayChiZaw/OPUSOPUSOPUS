@@ -39,7 +39,7 @@ public class Cake_details extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cake_details);
+        setContentView(R.layout.activity_product_details);
         final Button button = findViewById(R.id.detail);
 
         button.setOnClickListener(new View.OnClickListener() {

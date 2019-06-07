@@ -62,7 +62,7 @@ public class Topping extends AppCompatActivity implements View.OnTouchListener, 
         {
             imgDestination.setImageResource(R.drawable.strawberrybut);
         }
-        else if (str.equals("whip"))
+        else if (str.equals("whipped cream"))
         {
             imgDestination.setImageResource(R.drawable.whitecream);
         }
