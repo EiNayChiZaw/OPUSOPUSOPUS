@@ -9,13 +9,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/gradientlayout">
 
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="56dp"
             android:background="@color/colorPrimaryDark"
             android:orientation="vertical">
 
@@ -26,37 +27,48 @@
                 android:layout_gravity="center"
                 android:fontFamily="@font/raleway"
                 android:paddingTop="10dp"
-                android:text="Flavour Options"
+                android:text="Flavor Options"
                 android:textColor="#ffffff"
                 android:textSize="25dip"
                 android:textStyle="bold"></TextView>
         </LinearLayout>
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:orientation="vertical">
+            android:layout_height="273dp"
+            android:orientation="vertical"
+            android:background="@color/realwhite">
 
-            <ImageView
-                android:id="@+id/cakeDestination"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:src="@drawable/circle_border"
-                android:layout_marginTop="30dp"
-                android:tag="Destination" />
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="120dp"
+                android:text="Choose a cake flavor"
+                android:textColor="#afafaf"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/textView21"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="130dp"
-            android:text="Choose Flavour"
-            android:layout_marginTop="20dp"
-            android:textColor="#E91E63"
-            android:textStyle="bold"
-            android:textSize="20sp" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:background="@color/colorPrimaryDark"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Choose a Flavor"
+            android:paddingTop="10dp"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,6 +93,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_weight="1"
                         android:tag="strawberry"
+                        android:background="#ff8686"
                         app:srcCompat="@drawable/strawberryf" />
 
                     <ImageView
@@ -90,6 +103,7 @@
                         android:layout_marginLeft="20dp"
                         android:layout_weight="1"
                         android:tag="chocolate"
+                        android:background="#af4d4d"
                         app:srcCompat="@drawable/chocof" />
 
                 </LinearLayout>
@@ -103,25 +117,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
+                        android:paddingBottom="10sp"
                         android:orientation="horizontal">
-
                         <TextView
                             android:id="@+id/textView11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="70dp"
+                            android:layout_gravity="center"
                             android:layout_weight="1"
+                            android:layout_marginLeft="39dp"
                             android:text="STRAWBERRY"
-                            android:textColor="#E91E63" />
+                            android:textColor="#E91E63"
+                            android:textSize="21dp" />
 
                         <TextView
                             android:id="@+id/textView10"
-                            android:layout_width="wrap_content"
+                            android:layout_width="93dp"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="60dp"
+                            android:layout_marginLeft="20dp"
                             android:layout_weight="1"
                             android:text="CHOCOLATE"
-                            android:textColor="#352626" />
+                            android:textColor="#352626"
+                            android:textSize="21dp" />
                     </LinearLayout>
 
                 </LinearLayout>
@@ -133,21 +150,17 @@
         <Button
             android:id="@+id/btnfa"
             style="@style/Theme.MaterialButton"
-            android:layout_width="200dp"
+            android:layout_width="147dp"
             android:layout_height="39dp"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="5dip"
             android:background="@drawable/round_corners"
-            android:textAlignment="center"
             android:elevation="10dp"
             android:fontFamily="@font/raleway"
-            android:layout_marginTop="2dp"
-            android:paddingLeft="20dp"
             android:text="Next"
+            android:textAlignment="center"
             android:textColor="@color/browser_actions_bg_grey"
             android:textSize="18dp"
             android:textStyle="bold"></Button>
-
     </LinearLayout>
 
 </RelativeLayout>
